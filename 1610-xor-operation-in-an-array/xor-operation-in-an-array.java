@@ -5,15 +5,15 @@ class Solution {
         
         int arr[] = new int[n];
         int snt=0;
+        int sum=0;
         for(int i=0;i<n;i++)
         {
             arr[snt++] = start+2*i; 
+            sum^=arr[i];
+
         }
-        int sum=0;
-        for(int a: arr)
-        {
-            sum^=a;
-        }
+        
+        
        return sum;
         
     }
